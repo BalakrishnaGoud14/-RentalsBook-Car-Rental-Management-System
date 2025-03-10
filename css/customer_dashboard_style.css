@@ -1,0 +1,164 @@
+/* Add some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;  /* Vertically center logo and text */
+    justify-content: center; /* Center horizontally */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 80px; /* Adjust the logo size */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    margin: 0; /* Remove default margin around h1 */
+    display: inline; /* Keep the title inline next to the logo */
+}
+
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.user-info, .recent-bookings {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2, .recent-bookings h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+.logout-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space out sections */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.footer-section {
+    flex: 1; /* Make sections flexible */
+    margin-right: 40px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff; /* Add color for section headings */
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff; /* Hover effect for links */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444; /* Thin line at the top */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc; /* Lighter color for bottom text */
+}
+
+.footer-section.help {
+    flex: 1; /* Keeps it flexible */
+    margin-left: 450px; /* Add margin to move it to the right */
+}

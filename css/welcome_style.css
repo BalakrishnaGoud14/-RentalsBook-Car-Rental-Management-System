@@ -1,0 +1,170 @@
+
+body {
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+	background-size: cover; /* Ensures the image covers the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    align-items: center; 
+	
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.container {
+    padding-top: 0; 
+    text-align: center;
+    height: 60px;
+    width: auto;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.Logo-img {
+    display: flex; /* Use flexbox */
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.steps-img img {
+   
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+   
+}
+
+.steps-img {
+    display: flex; /* Use flexbox */
+    align-items: center; 
+    justify-content: center;
+
+}
+
+
+.steps-img img {
+   
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+   
+}
+
+.button-container {
+    padding: 30px; 
+    text-align: center;
+    height: 60px;
+    width: auto;
+}
+
+.start-booking-button {
+    padding: 15px 30px; /* Add padding to the button */
+    font-size: 18px; /* Font size */
+    font-weight: 600 ;
+    color: #000000; /* Text color */
+    background-color:#7c7cfb;/* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.start-booking-button:hover {
+    background-color: #6060fa; /* Darker shade on hover */
+}
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text */
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space out sections */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+    padding: 0 20px; /* Padding on the sides */
+}
+
+.footer-section {
+    flex: 1; /* Make sections flexible */
+    margin-right: 40px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff; /* Add color for section headings */
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff; /* Hover effect for links */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444; /* Thin line at the top */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ccc; /* Lighter color for bottom text */
+}
+
+.footer-section.help {
+    flex: 1; /* Keeps it flexible */
+    margin-left: 450px; /* Add margin to move it to the right */
+}

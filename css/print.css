@@ -1,0 +1,119 @@
+/* General print styles */
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide unnecessary elements during printing */
+header, footer, nav, button {
+    display: none;
+}
+
+/* Style the receipt container for printing */
+.receipt-container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    background: #fff;
+    color: #000;
+    border: none; /* Remove borders */
+    box-shadow: none; /* Remove shadows */
+}
+
+/* Add company logo and name at the top */
+.receipt-container::before {
+    content: '';
+    display: block;
+    text-align: center;
+    background-image: url('css/Logo.png'); /* Replace with actual logo path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 1em auto;
+    width: 120px; /* Adjust size as needed */
+    height: 120px; /* Match the width for a square logo */
+}
+
+/* Add company name below the logo */
+.company-name {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Title (e.g., Payment Successful) */
+.receipt-container h1 {
+    text-align: center;
+    color: #28a745; /* Green for success */
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+/* Subheading (e.g., Booking Details) */
+.receipt-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 1em;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.3em;
+    margin-bottom: 1em;
+}
+
+/* Booking details section */
+.receipt-container .details {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-top: 1em;
+    color: #555;
+}
+
+.receipt-container p {
+    margin: 0.5em 0;
+}
+
+/* Bold text for labels */
+.receipt-container strong {
+    font-weight: bold;
+}
+
+/* Align footer text in a smaller font */
+.receipt-container .footer-text {
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 2em;
+}
+
+/* Ensure all content fits nicely on one page */
+@page {
+    margin: 1in;
+}
+
+
+/* Add company logo at the top */
+.receipt-container-company::before {
+    content: '';
+    display: block;
+    text-align: center;
+    margin: 0 auto 1em auto;
+   
+    width: 120px; /* Adjust width */
+    height: 120px; /* Ensure height matches width for square logos */
+}
+
+/* Add company name below the logo */
+.company-name {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    display: block; /* Ensure it's always displayed */
+}
